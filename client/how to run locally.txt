@@ -1,0 +1,5 @@
+1. open command prompt
+2. Cd to path C:\Users\HELLY\Workspace\CareerCounselling\client
+3. If running first time then run npm install comamnd first
+3. run ng serve command
+4. on browser go to localhost:4200

@@ -1,0 +1,132 @@
+a {
+    text-decoration: none;
+    color: white;
+    font-family: serif;
+}
+
+/* a:hover, a:active {
+    color: black;
+    zoom: 110%;
+} */
+
+mat-card {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+mat-toolbar {
+    height: 100%;
+    background: #8a8e96; /* Old browsers */
+    background: -moz-linear-gradient(top,  #8a8e96 0%, #636363 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #8a8e96 0%,#636363 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #8a8e96 0%,#636363 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8a8e96', endColorstr='#636363',GradientType=0 ); /* IE6-9 */
+}
+
+.contents {
+    width: 100%
+}
+
+.navigation {
+    align-self: end;
+}
+.navigation-items {
+    List-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+mat-toolbar {
+    background-color: whitesmoke;
+}
+/* 
+@media(max-width: 959px) {
+    mat-toolbar {
+        border-radius: 0px;
+    }
+} */
+
+.buttonLink {
+    --color: #00A97F;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    /* border: 1px solid; */
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+   }
+   
+   .buttonLink::before, .button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+   }
+   
+   .buttonLink::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .buttonLink::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .buttonLink:hover::before, .button:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .buttonLink:hover {
+    color: rgb(10, 25, 30);
+   }
+   
+   .buttonLink:active {
+    filter: brightness(.8);
+   }
+   
+.fabButton {
+    margin: 12px;
+    border: solid 1px black;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+.fabButton:hover {
+    cursor: pointer;
+}
+
+.tooltip {
+    visibility: hidden;
+    position: absolute;
+    text-align: right;
+    color: black;
+    background-color: white;
+    margin-left: -10px;
+}
+
+.fabButton:hover .tooltip {
+    visibility:visible;
+}
+
+.picavatar {
+    margin-left: -5px;
+}

@@ -1,0 +1,87 @@
+<mat-toolbar>
+    <!-- <div fxHide.gt-xs>
+        <button mat-icon-button (click)="onToggleSidenav()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div> -->
+
+    <!-- <mat-card>
+        <!-- <img mat-card-image src="/assets/NavigationHeader.jpg"> 
+
+        <mat-card-content> -->
+            <!-- <div class="navigationHeader">
+                Education And Career counselling 
+            </div> -->
+            <div class="navigation">
+                <div fxFlex fxLayout fxHide.xs>
+                    <ul fxLayout class="navigation-items navbar" *ngIf="loginService.user.isLoggedIn == true">
+                        <li class="buttonLink">
+                            <a routerLink="/exams">Exams</a>
+                        </li>
+                        <li class="buttonLink">
+                            <a routerLink="/courses">Courses</a>
+                        </li>
+                        <li class="buttonLink">
+                            <a routerLink="/newsfeeds">News Feed</a>
+                        </li>
+                        <li class="buttonLink">
+                            <a routerLink="/faq">FAQ's</a>
+                        </li>
+                        <li class="buttonLink">
+                            <a routerLink="/sitemap">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navigation" fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+                <ul fxLayout class="navigation-items">
+                    <li *ngIf="loginService.user.isLoggedIn == false" class="buttonLink">
+                        <a routerLink="/login">Login</a>
+                    </li>
+                    <li *ngIf="loginService.user.isLoggedIn == false" class="buttonLink">
+                        <a routerLink="/signUp">SignUp</a>
+                    </li>
+                    <li *ngIf="loginService.user.isLoggedIn == true" class="buttonLink">
+                        <a routerLink="/dashboard">Dashboard</a>
+                    </li>
+                    <li *ngIf="loginService.user.isLoggedIn == true" >
+                       <button mat-fab color="accent" class="fabButton" (click)="navigate('profile')" aria-label="profile">
+                            <!-- <mat-icon>person</mat-icon> -->
+                            <img mat-card-avatar class="picavatar" [src]="loginService.user.profilePicPath">
+                            <span class="tooltip">profile</span>
+                        </button>
+                    </li>
+                    <li *ngIf="loginService.user.isLoggedIn == true" >
+                        <button mat-icon-button color="primary" class="fabButton" (click)="navigate('setting')" aria-label="setting">
+                            <mat-icon>settings</mat-icon>
+                            <span class="tooltip">settings</span>
+                        </button>
+                    </li>
+                    <li *ngIf="loginService.user.isLoggedIn == true" >
+                        <button mat-icon-button color="primary" class="fabButton" (click)="logout()" aria-label="setting">
+                            <mat-icon>exit_to_app</mat-icon>
+                            <span class="tooltip">log out</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        <!-- </mat-card-content>            
+    </mat-card> -->
+
+</mat-toolbar>    
+    <!-- <div>
+        <ul class="navigation-items">
+            <li>
+                <a routerLink="/cricket">Cricket</a>
+            </li>
+            <li>
+                <a routerLink="/football">Football</a>
+            </li>
+            <li>
+                <a routerLink="/badminton">Badminton</a>
+            </li>
+            <li>
+                <a routerLink="/basketball">Basketball</a>
+            </li>
+        </ul>
+    </div> -->

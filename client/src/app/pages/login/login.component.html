@@ -1,0 +1,22 @@
+<div class="login-wrapper" fxLayout="column" fxLayoutAlign="center center">
+    <mat-card class="box">
+    <mat-card-header class="cardTitle">
+        <mat-card-title >Log in</mat-card-title>
+    </mat-card-header>
+
+    <!-- <form class="example-form"> -->
+        <mat-card-content>
+        <!-- <mat-form-field class="example-full-width"> -->
+            <input class="example-full-width" placeholder="Username" [(ngModel)]="UserName">
+        <!-- </mat-form-field> -->
+
+        <!-- <mat-form-field class="example-full-width"> -->
+            <input type="password" class="example-full-width" placeholder="Password" [(ngModel)]="Password">
+        <!-- </mat-form-field> -->
+        </mat-card-content>
+        <button mat-stroked-button color="#673ab7" class="btn-block" (click)="LoginUser()">Log in</button>
+        <label class="validaton-label"> {{ ValidationMessage }} </label>
+        <h3 class="header">Not a member yet? <a class="link" href="/signUp" title="signup">Sign Up</a> here</h3>
+        <!-- </form> -->
+    </mat-card>
+</div>

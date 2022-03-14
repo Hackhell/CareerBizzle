@@ -1,0 +1,19 @@
+<!-- <mat-card [ngStyle]="{'width': width, 'height': height }" class="card">
+    <mat-icon mat-card-image>home</mat-icon>
+    <mat-card-content>
+        <h2>{{header}}</h2>
+        <p>{{description}}</p>
+    </mat-card-content>
+</mat-card> -->
+
+<div flex fxLayout="column" [ngStyle]="{'width': width, 'height': height }" class="card">
+    <!-- <img mat-card-image [src]="imagePath"> -->
+        <div flex="70">
+    <img [src]="src">
+    <!-- <mat-icon>{{iconType}}</mat-icon> -->
+        </div>
+        <div flex="50">
+            <h2 class="content" >{{header}}</h2>
+            <p class="content" >{{description}}</p>
+        </div>
+    </div>

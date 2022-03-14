@@ -1,0 +1,99 @@
+<div flex fxLayout="column" class="main" fxLayoutGap="30px">
+    <div flex="20" fxLayout="row" class="dashboardHeader" fxLayoutGap="30px"
+        fxLayoutAlign="center">
+        <!-- <input class="search" matInput placeholder="Search" 
+            [(ngModel)]="searchText"> -->
+            <!-- <mat-autocomplete class="search" #auto="matAutocomplete">
+                <mat-option *ngFor="let searchItem of searchList" [value]="searchItem.searchComponent" 
+                    (optionSelected)="searchSelected(searchItem)">
+                    {{ searchItem.searchText }}
+                </mat-option>
+            </mat-autocomplete> -->
+            <!-- <form class="example-form search" > -->
+                <mat-form-field class="formfield">
+                  <!-- <mat-label>Number</mat-label> -->
+                  <input type="text"
+                        class="search"
+                         placeholder="Search Anything....."
+                         matInput
+                         [matAutocomplete]="auto"
+                         (input)="searchChange($event)">
+                  <mat-autocomplete #auto="matAutocomplete" (optionSelected)="searchSelected($event)">
+                    <mat-option class="matoption" *ngFor="let searchItem of searchList" [value]="searchItem.searchComponent">
+                        {{ searchItem.searchText }}
+                    </mat-option>
+                  </mat-autocomplete>
+                </mat-form-field>
+              <!-- </form>     -->
+        </div>
+    <div flex="80" fxLayout="column" fxLayoutGap="40px">
+        <!-- <mat-grid-list cols="5" rowHeight="250px"> -->
+            <div flex fxLayout="row" class="cardRow">
+                <child-card width="350px" height="250px" header="In School" src="/assets/after9th.png" 
+                    (click)="navigate('inSchool')" description="Are you in school? Explore unlimited opportunities for your future"></child-card>
+                <child-card width="350px" height="250px" header="10th Fail" src="/assets/10thFail.png" 
+                (click)="navigate('10thFail')" description="Failed in 10th? Don't worry we got suggessions for you"></child-card>
+                <child-card width="350px" height="250px" header="10th Pass" src="/assets/after10th.png" (click)="navigate('10thPass')"
+                    description="Confused what to do after 10th?Don't worry we have got you covered"></child-card>
+            </div>
+
+            <div flex fxLayout="row" class="cardRow">
+                <child-card width="350px" height="250px" header="11th/12th Fail" src="/assets/10thFail.png" (click)="navigate('11th12thFail')"
+                    description="Did you failed 11th or 12th? There is a room for every one. Explore the careers here"></child-card>
+                <child-card width="350px" height="250px" header="11th/12th Pass" src="/assets/after12th.png" (click)="navigate('11th12thPass')"
+                    description="Don't know where to start. Lookig for different fields? Here is the answer"></child-card>
+                <child-card width="350px" height="250px" header="11th/12th Dropouts" src="/assets/dropout.png" (click)="navigate('11th12thDropout')"
+                    description="Dropped for 11th-12th? Click to know what you can do next"></child-card>
+            </div>
+            <div flex fxLayout="row" class="cardRow">
+                <child-card width="350px" height="250px" header="In College" src="/assets/college.png" (click)="navigate('inCollege')"
+                    description="Are you looking to do something extraordinary in your free time? Check it out here"></child-card>
+                <child-card width="350px" height="250px" header="College Dropouts" src="/assets/dropout.png" (click)="navigate('collegeDropout')"
+                    description="Did not finish college? Check what you can do"></child-card>
+                <child-card width="350px" height="250px" header="Working Professional" src="/assets/workingProfessional.png" (click)="navigate('workingProfessional')"
+                    description="Are you working professional and looking for further study?"></child-card>
+            </div>
+            <div flex fxLayout="row" class="cardRow">
+                <child-card width="350px" height="250px" header="Study Abroad" src="/assets/studyAbroad.png" (click)="navigate('studyAbroad')"
+                    description="Are you plannig to go abroad for study? We have covered all the options"></child-card>
+                <child-card width="350px" height="250px" header="Career Transitions" src="/assets/careerTransition.png" (click)="navigate('careerTransitions')"
+                    description="NOt enjoying your current job? Don't worry, there are unlimitted doors open for you"></child-card>
+                <child-card width="350px" height="250px" header="Education Loans with 0% Interests" src="/assets/educationLoans.png" (click)="navigate('educationLoans')"
+                    description="Looking for education loans with lowest interest rates? Check it out here"></child-card>
+            </div>
+            <div flex fxLayout="row" class="cardRow">
+                <child-card width="350px" height="250px" header="Olympiads" src="/assets/olympiads.png" (click)="navigate('olympiad')"
+                    description="Check here for all Olympiad exams details"></child-card>
+                <child-card width="350px" height="250px" header="Scholarships" src="/assets/scholarship.png" (click)="navigate('scholarships')"
+                    description="Want to qualify for scholarship? We got suggesions for you"></child-card>
+            </div>
+            <!-- <mat-grid-tile>
+                <child-card width="170px" height="180px"></child-card>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <child-card width="170px" height="180px"></child-card>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <child-card width="170px" height="180px"></child-card>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <child-card width="170px" height="180px"></child-card>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <child-card width="170px" height="180px"></child-card>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <child-card width="170px" height="180px"></child-card>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <child-card width="170px" height="180px"></child-card>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <child-card width="170px" height="180px"></child-card>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <child-card width="170px" height="180px"></child-card>
+            </mat-grid-tile> -->
+        <!-- </mat-grid-list> -->
+    </div>
+</div>

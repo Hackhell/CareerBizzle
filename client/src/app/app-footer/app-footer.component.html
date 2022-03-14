@@ -1,0 +1,78 @@
+<div class="footer" fxFlex fxLayout="row" fxLayoutGap="15px" fxLayoutAlign="space-evenly"
+    *ngIf="loginService.user.isLoggedIn == true">
+    <div >
+        <a routerLink="/exams">EXAMS</a>
+    </div>
+    <mat-divider [vertical]="true"></mat-divider>
+    <div >
+        <a routerLink="/courses">COURCES</a>
+    </div>
+    <mat-divider [vertical]="true"></mat-divider>
+    <div >
+        <a routerLink="/contactform">CONTACT FORM</a>
+    </div>
+    <mat-divider [vertical]="true"></mat-divider>
+    <div >
+        <a routerLink="/Email">EMAIL</a>
+    </div>
+    <mat-divider [vertical]="true"></mat-divider>
+    <div >
+        <a routerLink="/aboutus">ABOUT US</a>
+    </div>
+    <mat-divider [vertical]="true"></mat-divider>
+    <div >
+        <a routerLink="/workwithus">WORK WITH US</a>
+    </div>
+    <mat-divider [vertical]="true"></mat-divider>
+    <div fxLayout="row" fxLayoutGap="15px">
+        <fa-icon class="icon" [icon]="twitterIcon" size="2x" (click)="openPage('https://www.google.com')"></fa-icon>
+        <fa-icon class="icon" [icon]="instaIcon"  size="2x" (click)="openPage('https://www.linkedin.com/in/hiren-jethava-90a12065/')"></fa-icon>
+        <fa-icon class="icon" [icon]="fbIcon"  size="2x" (click)="openPage('https://www.linkedin.com/in/hiren-jethava-90a12065/')"></fa-icon>
+        <fa-icon class="icon" [icon]="linkedinIcon"  size="2x" (click)="openPage('https://www.linkedin.com/in/hiren-jethava-90a12065/')"></fa-icon>
+    </div>
+</div>
+
+<!-- <div class="footer" fxFlex fxLayout="row" fxLayoutGap="15px" fxLayoutAlign="space-evenly">
+    <div fxFlex="15">
+        <ul class="navigation-items">
+            <li>
+                <a routerLink="/exams">Exams</a>
+            </li>
+            <li>
+                <a routerLink="/courses">Courses</a>
+            </li>
+        </ul>
+    </div>
+    <div fxFlex="15">
+        <ul class="navigation-items">
+            <li>
+                <a routerLink="/contactform">Contact Form</a>
+            </li>
+            <li>
+                <a routerLink="/Email">Email</a>
+            </li>
+        </ul>
+    </div>
+    <div fxFlex="15">
+        <ul class="navigation-items">
+            <li>
+                <a routerLink="/aboutus">About Us</a>
+            </li>
+        </ul>
+    </div>
+    <div fxFlex="15">
+        <ul class="navigation-items">
+            <li>
+                <a routerLink="/workwithus">Work With Us</a>
+            </li>
+        </ul>
+    </div>
+    <div fxFlex="15" fxLayout="column" fxFlexAlign="center" class="navigation-items">
+        <div fxFlex="15" fxLayout="row" fxLayoutGap="15px">
+            <fa-icon class="icon" [icon]="twitterIcon" size="2x"></fa-icon>
+            <fa-icon class="icon" [icon]="instaIcon"  size="2x"></fa-icon>
+            <fa-icon class="icon" [icon]="fbIcon"  size="2x"></fa-icon>
+            <fa-icon class="icon" [icon]="linkedinIcon"  size="2x"></fa-icon>
+        </div>
+    </div>
+</div> -->

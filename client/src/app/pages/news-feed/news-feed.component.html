@@ -1,0 +1,32 @@
+<div flex fxLayout="row" fxLayoutAlign="center">
+    <div flex="25"></div>
+    <mat-card flex="50" class="newsfeed-card">
+        <mat-card-header flex fxLayout="row" fxLayoutAlign="space-between space-evenly">
+            <mat-card-title class="newsTitle">News Feeds</mat-card-title>
+            <button mat-mini-fab color="lightgray" (click)="addNewsFeed()">
+                <mat-icon>add_circle</mat-icon>
+            </button>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-list *ngFor="let feed of newsFeeds">
+                <mat-card class="feed-card">
+                    <mat-card-header>
+                        <img mat-card-avatar class="picavatar" [src]="feed.profilePicPath">
+                        <mat-card-title class="newsTitle">{{ feed.fullName }}</mat-card-title>
+                        <mat-card-subtitle>{{ feed.feedHeader }}</mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-content>
+                    <p>{{ feed.feedContent }}</p>
+                    <mat-divider></mat-divider>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <p>Posted at: {{ feed.postedDate }}</p>
+                    </mat-card-actions>
+                </mat-card>
+            </mat-list>
+        </mat-card-content>
+        <mat-card-actions>
+        </mat-card-actions>
+    </mat-card>
+    <div flex="25"></div>
+</div>

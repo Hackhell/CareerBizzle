@@ -1,0 +1,18 @@
+.cardRow {
+    place-content: flex-start space-evenly;
+}
+
+mat-card {
+    max-width: 250px;
+    /* max-height: 350px; */
+    overflow-y: auto;
+}
+.countryImg {
+    margin-top: 10px;
+}
+
+.abroadList {
+    list-style: none;
+    color: white;
+    margin-left: -30px;
+}

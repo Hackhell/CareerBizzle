@@ -1,0 +1,19 @@
+.feed-card {
+    max-width: 500px;
+    min-height: 100%;
+    background-color: gray;
+}
+
+.newsfeed-card {
+    min-width: 400px;
+    min-height: 300px;
+    background-color: lightgrey;
+}
+
+.newsTitle {
+    color: white;
+}
+
+.header {
+    flex-direction: column;
+}

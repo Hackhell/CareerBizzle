@@ -1,0 +1,19 @@
+<div flex fxLayout="row" fxLayoutAlign="center">
+    <div flex="25"></div>
+    <mat-card flex="50" class="newsfeed-card">
+        <mat-card-header flex fxLayout="column" fxLayoutAlign="space-between space-evenly">
+            <h2>Add New Feed</h2>
+            <mat-divider></mat-divider>
+            <input class="header" placeholder="Header" [(ngModel)]="dialogData.feedHeader">
+        </mat-card-header>
+        <mat-card-content>
+            <textarea class="content" placeholder="content" [(ngModel)]="dialogData.feedContent"></textarea>    
+        </mat-card-content>
+        <mat-card-actions class="action">
+            <button class="addBtn" (click)="addNewsFeed(dialogData)">
+                Add
+            </button>
+        </mat-card-actions>
+    </mat-card>
+    <div flex="25"></div>
+</div>

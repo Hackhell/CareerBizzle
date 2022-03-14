@@ -1,0 +1,28 @@
+.ulist {
+    list-style: none;
+}
+
+.header, .content {
+    margin: 10px;
+}
+
+.site-card {
+    background-color: grey;
+    margin: 20px;
+    width: 200px;
+}
+
+.li {
+    list-style: lower-greek;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    /* font-family: serif; */
+}
+
+a:hover, a:active {
+    color: black;
+    zoom: 110%;
+}

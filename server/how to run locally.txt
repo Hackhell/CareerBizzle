@@ -1,0 +1,5 @@
+1. open command propmt
+2. cd to path C:\Users\HELLY\Workspace\CareerCounselling\server
+3. If running first time then run npm install comamnd first
+4. run node server.js command
+ it will run on port 8000
